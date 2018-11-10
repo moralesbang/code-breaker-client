@@ -1,0 +1,53 @@
+body {
+  background-color: indigo;
+  color: white;
+}
+
+.app {
+  height: 100vh;
+
+  .container {
+    height: 70%;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.new-game {
+  text-decoration: inherit;
+
+  &:visited, &:hover {
+    color: inherit;
+  }
+}
+
+.game {
+  input[type="number"] {
+    padding: .5em;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="submit"] {
+    margin-left: 1em;
+    padding: .5em;
+    border: none;
+    font-weight: bold;
+  }
+
+  .result {
+    margin-top: 3rem;
+    background-color: white;
+    color: black;
+    font-size: 4em;
+    text-align: center;
+  }
+}
